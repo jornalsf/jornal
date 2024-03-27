@@ -26,12 +26,16 @@
         }
 
         header {
-            background-color: #e0dac8; /* Bege */
+            background-color: transparent; 
+            transition: background-color 0.3s;
             color: #000000; /* Preto */
             padding: 10px;
             text-align: center;
             font-family: 'Intrepid', Arial, sans-serif;
         }
+        header:hover {
+        background-color: rgb(217, 207, 247);
+    }
 
         .topics-bar { 
             color: #000000; /* Preto */
@@ -360,13 +364,13 @@ body.overlay footer {
   position: relative;
   right: 5rem;
   top: 13rem;
-  background-color: #c49743; /* Cor de fundo padrão */
+  background-color: #3c2547; /* Cor de fundo padrão */
   border: 2px solid transparent; /* Contorno transparente */
 transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
 }
 .btn:hover {
     background-color: #ffffff; /* Cor de fundo ao passar o mouse */
-    border-color: #c49743; /* Cor do contorno ao passar o mouse */
+    border-color: #3c2547; /* Cor do contorno ao passar o mouse */
     color: #000000;
 }
 
@@ -442,11 +446,11 @@ transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
   right: 0.4rem;
   top: 0.5rem;
   background-color: #ffffff; /* Cor de fundo padrão */
-  border: 2px solid #c49743; /* Contorno transparente */
+  border: 2px solid #3c2547; /* Contorno transparente */
  transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
 }
 .additional-text .btn:hover {
-    background-color: #c49743; /* Cor de fundo ao passar o mouse */
+    background-color: #3c2547; /* Cor de fundo ao passar o mouse */
     border-color: #ffffff; /* Cor do contorno ao passar o mouse */
     color: #ffffff;
 }
@@ -634,7 +638,7 @@ letter-spacing: 1.8px;
                     <!-- Aqui você insere o input para o botão de login -->
                     <input type="submit" value="Login" class="btn solid" id="login-btn" />
                 </form>
-                <h2 id="conta2">Eu não possuo uma conta</h2>
+                <h2 id="conta2">Eu ainda não possuo uma conta</h2>
                 <div class="additional-text">
                     <p>Aproveite benefícios adicionais e uma experiência mais rica criando uma conta pessoal</p>
                     <a href="https://jornalsf.github.io/register/"><input type="submit" value="Criar uma Conta" class="btn solid" id="login-btn" /></a>
