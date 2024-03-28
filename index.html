@@ -106,7 +106,7 @@
         .menu-container1 {
     position: fixed;
     top: 0;
-    right: -690px;
+    right: -960px;
     width: 50%;
     height: 100%;
     background-color: #ffffff;
@@ -192,7 +192,7 @@
 }
         .menu-button {
             position: fixed;
-            top: 6%;
+            top: 5%;
             left: 3.3%;
             cursor: pointer;
             z-index: 999;
@@ -273,7 +273,7 @@
     width: 1rem;
     position: absolute;
     right: 8%;
-    top: 6%;
+    top: 5%;
 }
 
         body.overlay {
@@ -316,7 +316,7 @@ body.overlay footer {
   padding: 0 0.4rem;
   position: relative;
   top: 12rem;
-  right: 4rem;
+  right: 17rem;
 }
 
 .input-field:hover {
@@ -352,7 +352,7 @@ body.overlay footer {
   font-weight: bold;
 }
 .btn {
-  width: 450px;
+  width: 620px;
   border: none;
   outline: none;
   height: 45px;
@@ -387,7 +387,7 @@ transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
     margin-top: 5px; /* Espaçamento superior */
     position: relative;
     top: 11.5rem;
-    right: 4rem;
+    right: 16.7rem;
     text-decoration: underline;
 }
 
@@ -396,7 +396,7 @@ transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
     color: #333; /* Cor do texto */
     position: relative;
     top: 1.8rem;
-    right: 4rem;
+    right: 16.7rem;
     white-space: nowrap; /* Evita que o texto seja quebrado verticalmente */
 }
 
@@ -405,10 +405,21 @@ transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
     color: #333; /* Cor do texto */
     position: relative;
     top: 18rem;
-    right: 5rem;
+    right: 17.5rem;
     white-space: nowrap; /* Evita que o texto seja quebrado verticalmente */
 }
-
+#ctexto2 {
+    position: relative;
+    right: 12.5rem;
+}
+#login-btn1 {
+    position: relative;
+    right: 12.5rem;
+}
+#login-btn {
+    position: relative;
+    right: 17.6rem;
+}
 .container {
     overflow-y: visible;
 }
@@ -433,7 +444,7 @@ transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
 }
 
 .additional-text .btn {
-  width: 460px;
+  width: 620px;
   border: none;
   outline: none;
   height: 45px;
@@ -544,7 +555,7 @@ letter-spacing: 1.8px;
     <header>
         <h1 id="lv">JORNAL SF</h1>
         <span id="login" onclick="toggleMenu1()" onmouseenter="this.style.cursor='pointer'">
-            <i class="fas fa-user fa-lg"></i> <!-- Tamanho duas vezes maior -->
+           <i class="fas fa-user fa-lg"></i> <!-- Tamanho duas vezes maior -->
         </span>
                 
     </header>
@@ -604,8 +615,8 @@ letter-spacing: 1.8px;
         <div class="menu-icon-line1"></div>
     </div>
     <span id="close-menu" style="display: none;">
-        <i class="fas fa-times" style="font-size: 20px;"></i>
-        <span style="position: relative; top: -3px; right: 450px; font-size: 18px">Minha Conta</span>
+        <i class="fas fa-times" style="font-size: 20px; position: relative; top: -3px; right: 1.5rem"></i>
+        <span style="position: relative; top: -3px; right: 42rem; font-size: 18px">Minha Conta</span>
         <div class="rectangle"></div>
     </span>
 </div>
@@ -640,11 +651,11 @@ letter-spacing: 1.8px;
                 </form>
                 <h2 id="conta2">Eu ainda não possuo uma conta</h2>
                 <div class="additional-text">
-                    <p>Aproveite benefícios adicionais e uma experiência mais rica criando uma conta pessoal</p>
-                    <a href="https://jornalsf.github.io/register/"><input type="submit" value="Criar uma Conta" class="btn solid" id="login-btn" /></a>
+                    <p id="ctexto2">Aproveite benefícios adicionais e uma experiência mais rica criando uma conta pessoal</p>
+                    <a href="https://jornalsf.github.io/register/"><input type="submit" value="Criar uma Conta" class="btn solid" id="login-btn1"/></a>
                 </div>
             </div>
-            <div id="error-message" style="color: red; white-space: nowrap; position: absolute; top: 15.5rem; right: -4rem; "></div>
+            <div id="error-message" style="color: red; white-space: nowrap; position: absolute; top: 15.8rem; right: 8rem; "></div>
         </div>
     </div>
 </div>
@@ -738,7 +749,7 @@ function closeMenus() {
     var menuIcon1 = document.getElementById("menu-icon1");
     var closeButton1 = document.getElementById("close-menu");
 
-    menu1.style.right = "-690px"; // Fecha o menu-container1
+    menu1.style.right = "-960px"; // Fecha o menu-container1
     body.classList.remove("overlay");
     menu1.classList.remove("open");
     menuIcon1.classList.remove("open");
@@ -781,7 +792,7 @@ function closeMenu1() {
     var menu1 = document.getElementById("menu1");
     var closeButton = document.getElementById("close-menu");
 
-    menu1.style.right = "-690px"; // Fecha o menu-container1
+    menu1.style.right = "-960px"; // Fecha o menu-container1
     body.classList.remove("overlay");
     menu1.classList.remove("open");
     closeButton.style.display = "none"; // Oculta o botão "X"
